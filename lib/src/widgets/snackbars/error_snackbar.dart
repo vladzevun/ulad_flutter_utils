@@ -1,14 +1,5 @@
 import 'package:flutter/material.dart';
 
-class ErrorSnackbar extends StatelessWidget {
-  const ErrorSnackbar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
 //TODO: add localization
 void showErrorSnackBar(BuildContext context, {String? text}) {
   ScaffoldMessenger.of(context).showSnackBar(

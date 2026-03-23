@@ -1,13 +1,13 @@
 name: flutter_common_utils
 description: Reusable Flutter widgets, extensions, dialogs and UI helpers.
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/vladzevun/flutter_common_utils
 repository: https://github.com/vladzevun/flutter_common_utils
 issue_tracker: https://github.com/vladzevun/flutter_common_utils/issues
 
 environment:
   sdk: ^3.9.2
-  flutter: ">=1.17.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
