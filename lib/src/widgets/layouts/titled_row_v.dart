@@ -17,11 +17,7 @@ class TitledRowV extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
-      children: [
-        title,
-        spacingH8,
-        value
-      ],
+      children: [title, spacingH8, value],
     );
   }
 

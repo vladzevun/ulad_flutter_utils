@@ -1,9 +1,4 @@
-enum EventState {
-  initial,
-  loading,
-  data,
-  error,
-}
+enum EventState { initial, loading, data, error }
 
 extension EventStateX on EventState {
   bool get isLoading => this == EventState.loading;

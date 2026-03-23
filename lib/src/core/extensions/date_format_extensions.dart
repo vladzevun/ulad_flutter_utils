@@ -19,9 +19,7 @@ extension DateTimeX on DateTime {
 
   String toddMMyyyyHHmmDoted() => DateFormat('dd.MM.yyyy HH:mm').format(this);
 
-  String toddMMyyyyString({
-    required String separator,
-  }) {
+  String toddMMyyyyString({required String separator}) {
     return DateFormat('dd${separator}MM${separator}yyyy').format(this);
   }
 
@@ -37,9 +35,7 @@ extension DateTimeX on DateTime {
     return DateFormat('yyyy-MM-dd').format(this);
   }
 
-  String toHourString({
-    required String separator,
-  }) {
+  String toHourString({required String separator}) {
     return DateFormat('HH${separator}mm').format(this);
   }
 }

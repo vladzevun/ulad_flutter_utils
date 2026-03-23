@@ -5,11 +5,7 @@ class TitledColumn extends StatelessWidget {
   final Widget title;
   final List<Widget> children;
 
-  const TitledColumn({
-    required this.title,
-    required this.children,
-    super.key,
-  });
+  const TitledColumn({required this.title, required this.children, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +13,7 @@ class TitledColumn extends StatelessWidget {
       children: [
         title,
         spacingV8,
-        Column(
-          children: children,
-        ),
+        Column(children: children),
       ],
     );
   }

@@ -50,10 +50,7 @@ class InkButton extends StatelessWidget {
       height: height ?? 48.h,
       borderRadius: borderRadius ?? borderR8,
       color: color,
-      child: Text(
-        title,
-        style: ts16w400,
-      ),
+      child: Text(title, style: ts16w400),
     );
   }
 
