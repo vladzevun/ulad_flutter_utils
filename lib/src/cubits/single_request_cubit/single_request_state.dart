@@ -1,4 +1,4 @@
-import 'package:flutter_common_utils/src/cubits/cubits.dart';
+import 'package:flutter_common_utils/flutter_common_utils.dart';
 
 class SingleRequestState<T> {
   final T? data;
@@ -26,7 +26,7 @@ class SingleRequestState<T> {
     bool? hasMore,
   }) {
     return SingleRequestState(
-      data: data ?? data,
+      data: data ?? this.data,
       eventState: eventState ?? this.eventState,
       errorMessage: errorMessage ?? this.errorMessage,
       hasMore: hasMore ?? this.hasMore,

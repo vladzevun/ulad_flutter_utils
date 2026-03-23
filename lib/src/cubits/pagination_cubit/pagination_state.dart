@@ -1,4 +1,4 @@
-import 'package:flutter_common_utils/src/cubits/cubits.dart';
+import 'package:flutter_common_utils/flutter_common_utils.dart';
 
 class PaginationState<T> {
   final List<T> items;

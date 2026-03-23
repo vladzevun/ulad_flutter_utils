@@ -1,7 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_common_utils/flutter_common_utils.dart';
-import 'package:flutter_common_utils/src/cubits/cubits.dart';
-// ignore: always_use_package_imports
 
 abstract class SingleRequestCubit<T> extends Cubit<SingleRequestState<T>> {
   SingleRequestCubit() : super(SingleRequestState());
@@ -11,7 +9,9 @@ abstract class SingleRequestCubit<T> extends Cubit<SingleRequestState<T>> {
 
   bool _isLoading = false;
   Future<void> loadData() async {
-    if (state.eventState == EventState.loading || !state.hasMore || _isLoading) {
+    if (state.eventState == EventState.loading ||
+        !state.hasMore ||
+        _isLoading) {
       return;
     }
     _isLoading = true;

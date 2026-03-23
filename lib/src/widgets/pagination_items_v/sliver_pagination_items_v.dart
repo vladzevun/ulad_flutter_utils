@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_common_utils/src/cubits/cubits.dart';
+import 'package:flutter_common_utils/flutter_common_utils.dart';
 
 class SliverPaginationItemsV<T, C extends PaginationCubit<T>>
     extends StatefulWidget {

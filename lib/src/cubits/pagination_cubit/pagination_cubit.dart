@@ -1,7 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_common_utils/flutter_common_utils.dart';
-import 'package:flutter_common_utils/src/cubits/cubits.dart';
-// ignore: always_use_package_imports
 
 abstract class PaginationCubit<T> extends Cubit<PaginationState<T>> {
   final int _pageSize;
@@ -25,7 +23,9 @@ abstract class PaginationCubit<T> extends Cubit<PaginationState<T>> {
 
   /// Called on scroll controller reaches bottom of the page
   Future<void> loadNextPage({String? filter}) async {
-    if (state.eventState == EventState.loading || !state.hasMore || _isLoading) {
+    if (state.eventState == EventState.loading ||
+        !state.hasMore ||
+        _isLoading) {
       return;
     }
     _isLoading = true;
